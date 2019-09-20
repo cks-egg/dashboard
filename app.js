@@ -5,6 +5,8 @@ const cookieParser = require('cookie-parser');
 
 const indexRouter = require('./routes/index');
 const ddRouter = require('./routes/dashboard');
+const loginRouter = require('./routes/login');
+const joinRouter = require('./routes/join');
 const apiRouter = require('./routes/api');
 
 const loggerFactory = require('./common/loggerFactory');
@@ -24,8 +26,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use(process.env.APP_CONTEXT + '/', ddRouter);
+app.use(process.env.APP_CONTEXT + '/', indexRouter);
+app.use(process.env.APP_CONTEXT + '/login', loginRouter);
+app.use(process.env.APP_CONTEXT + '/join', joinRouter);
+app.use(process.env.APP_CONTEXT + '/dashboard', ddRouter);
 app.use(process.env.APP_CONTEXT + '/api', apiRouter);
 
 // catch 404 and forward to error handler

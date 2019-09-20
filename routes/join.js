@@ -1,10 +1,11 @@
 var express = require('express');
 var router = express.Router();
-const debug = require('debug')('dashboard:router:dashboard');
+const debug = require('debug')('dashboard:router:join');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('dashboard.html', { title: process.env.APP_TITLE });
+  debug("join");
+  res.render('join.html', { title: process.env.APP_TITLE });
 });
 
 module.exports = router;

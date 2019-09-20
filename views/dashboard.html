@@ -4,14 +4,611 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><%=title%></title>
-
-  <link rel="stylesheet" href="/stylesheets/style.css">
-  <script type="text/javascript" src="/js/jquery-3.4.1.min.js" ></script>
-
+  <meta name="format-detection" content="telephone=no"/>
+  <title></title>
+  <link rel="stylesheet" href="/stylesheets/common.css" type="text/css"/>
+  <script type="text/javascript" src="/javascripts/ui.js"></script>
+  <script type="text/javascript" src="/javascripts/common.js"></script>
 </head>
+
 <body>
-  <h1>대시보드</h1>
-  <script type="text/javascript">
-  </script>
+<div class="wrapper"><!-- start : wrapper -->
+
+  <div class="header"><!-- start : header -->
+    <div class="rela">
+      <h1><a href="javascript:void(0)" class="mui-btn">KND</a></h1>
+      <div class="totalBox">
+        <ul id="gnb" class="gnb">
+          <li><a href="javascript:void(0)">홈</a></li>
+          <li><a href="javascript:void(0)">프로젝트현황</a></li>
+          <li><a href="javascript:void(0)">품질분석 현황</a></li>
+          <li><a href="javascript:void(0)" class="arr">관리자용</a>
+            <ul class="subm">
+              <li><a href="">사용자관리</a></li>
+              <li><a href="">기관관리</a></li>
+              <li><a href="">분석신청</a></li>
+              <li><a href="">분석결과</a></li>
+              <li><a href="">평가내역</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="sideCont">
+        <a href="javascript:void(0)" class="icoLink mui-btn">
+          <i class="el-icon-question"></i>
+        </a>
+        <a href="javascript:void(0)" class="icoLink mui-btn">
+          <i class="el-icon-bell"></i>
+        </a>
+        <a href="javascript:void(0)" class="icoLink mui-btn">
+          <i class="el-icon-setting"></i>
+        </a>
+        <div class="selectLayer">
+          <a href="javascript:void(0)" class="selectLink">
+            <img src="/images/etc/etc_myinfo.png" />
+          </a>
+          <ul class="selectValueList" style="display: none;">
+            <li><a href="javascript:void(0)">프로파일</a></li>
+            <li><a href="javascript:void(0)">로그아웃</a></li>
+          </ul>
+        </div>
+        <a href="javascript:void(0)" class="tOpen icoLink mui-btn">
+          <i class="el-icon-s-unfold"></i>
+          <i class="el-icon-close"></i>
+        </a>
+      </div>
+    </div>
+  </div><!-- end : header -->
+
+  <div class="container" id="contents"><!-- start : container -->
+    <div class="mRow">
+      <div class="item">
+        <h2>MY PROFILE</h2>
+        <div class="mbox">
+          <div class="myPic"><img src="/images/etc/etc_myinfo01.png" /></div>
+          <div class="myCont">
+            <div class="mybar">
+              <p class="fl">홍길동</p>
+              <p class="fr">
+                <span class="txt">UX/UI Designer</span>
+                <span class="cnt">4</span>
+              </p>
+            </div>
+            <ul class="mylist01">
+              <li>
+                <img src="/images/ico/ico_mylist01.png" />
+                <span>가나다라시스템(주)</span>
+              </li>
+              <li>
+                <img src="/images/ico/ico_mylist02.png" />
+                <span>E-mail:knd123@knd.com</span>
+              </li>
+            </ul>
+            <ul class="mylist02">
+              <li>
+                <div class="cnt">15</div>
+                <p class="txt">Others</p>
+              </li>
+              <li>
+                <div class="cnt">15</div>
+                <p class="txt">WIP</p>
+              </li>
+              <li>
+                <div class="cnt">10</div>
+                <p class="txt">Done</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h2>시스템 접속자현황</h2>
+        <div class="mbox">
+          <div class="chart" id="bar01"></div>
+        </div>
+      </div>
+      <div class="item last">
+        <h2>로그인 활동현황</h2>
+        <div class="mbox">
+          <div class="chart" id="bar02"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mRow">
+      <div class="item full">
+        <h2>진행중인 프로젝트 현황</h2>
+        <div class="mbox">
+          <table class="mtable">
+            <colgroup>
+              <col width="80" />
+              <col width="80" />
+              <col width="80" />
+              <col width="80" />
+              <col width="80" />
+              <col width="100" />
+              <col width="" />
+            </colgroup>
+            <tr>
+              <th>&nbsp;</th>
+              <th>ID</th>
+              <th>이름</th>
+              <th>날짜</th>
+              <th>가격</th>
+              <th>상태</th>
+              <th>프로젝트현황</th>
+            </tr>
+            <tr>
+              <td><img src="/images/ico/ico_profile01.png" /></td>
+              <td>knd1234</td>
+              <td>김태영</td>
+              <td>19/19/01</td>
+              <td>1000</td>
+              <td>Completed</td>
+              <td>
+                <div class="gageBox">
+                  <div class="gageCont"><span class="bar c01"></span></div>
+                  <span class="value"><strong>20</strong>%</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="/images/ico/ico_profile01.png" /></td>
+              <td>knd1234</td>
+              <td>김태영</td>
+              <td>19/19/01</td>
+              <td>1000</td>
+              <td>Completed</td>
+              <td>
+                <div class="gageBox">
+                  <div class="gageCont"><span class="bar c02"></span></div>
+                  <span class="value"><strong>40</strong>%</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="/images/ico/ico_profile01.png" /></td>
+              <td>knd1234</td>
+              <td>김태영</td>
+              <td>19/19/01</td>
+              <td>1000</td>
+              <td>Completed</td>
+              <td>
+                <div class="gageBox">
+                  <div class="gageCont"><span class="bar c03"></span></div>
+                  <span class="value"><strong>70</strong>%</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="/images/ico/ico_profile01.png" /></td>
+              <td>knd1234</td>
+              <td>김태영</td>
+              <td>19/19/01</td>
+              <td>1000</td>
+              <td>Completed</td>
+              <td>
+                <div class="gageBox">
+                  <div class="gageCont"><span class="bar c01"></span></div>
+                  <span class="value"><strong>20</strong>%</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="/images/ico/ico_profile01.png" /></td>
+              <td>knd1234</td>
+              <td>김태영</td>
+              <td>19/19/01</td>
+              <td>1000</td>
+              <td>Completed</td>
+              <td>
+                <div class="gageBox">
+                  <div class="gageCont"><span class="bar c02"></span></div>
+                  <span class="value"><strong>40</strong>%</span>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="item last">
+        <h2>프로젝트 현황</h2>
+        <div class="mbox">
+          <div class="chart" id="pie01"></div>
+          <div class="pieCnt">
+            <strong>56</strong>
+            <p>TOTAL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mRow">
+      <div class="item">
+        <h2>Weekly Report</h2>
+        <div class="mbox">
+          <div class="chart" id="areaChart01"></div>
+        </div>
+      </div>
+      <div class="item">
+        <h2>Bitbucket Comit status</h2>
+        <div class="mbox">
+          <div class="bitucketCnt">
+            <p class="cnt">32</p>
+            <p class="txt">총 프로젝트 수</p>
+          </div>
+          <div class="dailyCommitBox">
+            <p class="tit">Daily Commit 3</p>
+            <ul class="dailyList">
+              <li class="n01">가나다라시스템(주)</li>
+              <li class="n02">아이티(주)</li>
+              <li class="n03">가나다라시스템(주)</li>
+            </ul>
+            <div class="dailyCnt">
+              <p class="cnt">106</p>
+              <p class="txt">Total Daily<br />Commit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item last">
+        <h2>Top 5 Project</h2>
+        <div class="mbox">
+          <table class="mtable">
+            <colgroup>
+              <col width="200" />
+              <col width="" />
+              <col width="80" />
+            </colgroup>
+            <tr>
+              <th>Title</th>
+              <th>Business part.</th>
+              <th>배포현황</th>
+            </tr>
+            <tr>
+              <td class="al">IT Consulting Service</td>
+              <td class="al">가나다라시스템</td>
+              <td>
+                <div class="donutBox" id="donut01"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="al">IT Consulting Service</td>
+              <td class="al">가나다라시스템</td>
+              <td>
+                <div class="donutBox" id="donut02"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="al">IT Consulting Service</td>
+              <td class="al">가나다라시스템</td>
+              <td>
+                <div class="donutBox" id="donut03"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="al">IT Consulting Service</td>
+              <td class="al">가나다라시스템</td>
+              <td>
+                <div class="donutBox" id="donut04"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="al">IT Consulting Service</td>
+              <td class="al">가나다라시스템</td>
+              <td>
+                <div class="donutBox" id="donut05"></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end : container -->
+
+
+</div><!-- end : wrapper-->
+<script>
+  $(function(){
+    common.gageSet(".gageBox:eq(0)", 20);
+    common.gageSet(".gageBox:eq(1)", 40);
+    common.gageSet(".gageBox:eq(2)", 70);
+    common.gageSet(".gageBox:eq(3)", 20);
+    common.gageSet(".gageBox:eq(4)", 40);
+  });
+  var donut01 = bb.generate({
+    size: {
+      width: 38,
+      height: 38
+    },
+    data: {
+      columns: [
+        ["data1", 60],
+        ["data2", 40]
+      ],
+      colors: {
+        data1: "#42ca7a",
+        data2: "#e1e1e1"
+      },
+
+      type: "donut"
+    },
+    legend: {
+      show: false
+    },
+    tooltip: {
+      show: false
+    },
+    donut: {
+      title: "",
+      label: {
+        show: false,
+        ratio: 1.5
+      },
+      width: 3
+    },
+    legend: {
+      show: false
+    },
+    bindto: "#donut01"
+  });
+  var donut02 = bb.generate({
+    size: {
+      width: 38,
+      height: 38
+    },
+    data: {
+      columns: [
+        ["data1", 60],
+        ["data2", 40]
+      ],
+      colors: {
+        data1: "#e8b71a",
+        data2: "#e1e1e1"
+      },
+
+      type: "donut"
+    },
+    legend: {
+      show: false
+    },
+    tooltip: {
+      show: false
+    },
+    donut: {
+      title: "",
+      label: {
+        show: false,
+        ratio: 1.5
+      },
+      width: 3
+    },
+    legend: {
+      show: false
+    },
+    bindto: "#donut02"
+  });
+  var donut03 = bb.generate({
+    size: {
+      width: 38,
+      height: 38
+    },
+    data: {
+      columns: [
+        ["data1", 60],
+        ["data2", 40]
+      ],
+      colors: {
+        data1: "#ae84a7",
+        data2: "#e1e1e1"
+      },
+
+      type: "donut"
+    },
+    legend: {
+      show: false
+    },
+    tooltip: {
+      show: false
+    },
+    donut: {
+      title: "",
+      label: {
+        show: false,
+        ratio: 1.5
+      },
+      width: 3
+    },
+    legend: {
+      show: false
+    },
+    bindto: "#donut03"
+  });
+  var donut04 = bb.generate({
+    size: {
+      width: 38,
+      height: 38
+    },
+    data: {
+      columns: [
+        ["data1", 60],
+        ["data2", 40]
+      ],
+      colors: {
+        data1: "#e45f56",
+        data2: "#e1e1e1"
+      },
+
+      type: "donut"
+    },
+    legend: {
+      show: false
+    },
+    tooltip: {
+      show: false
+    },
+    donut: {
+      title: "",
+      label: {
+        show: false,
+        ratio: 1.5
+      },
+      width: 3
+    },
+    legend: {
+      show: false
+    },
+    bindto: "#donut04"
+  });
+  var donut05 = bb.generate({
+    size: {
+      width: 38,
+      height: 38
+    },
+    data: {
+      columns: [
+        ["data1", 60],
+        ["data2", 40]
+      ],
+      colors: {
+        data1: "#638ca6",
+        data2: "#e1e1e1"
+      },
+
+      type: "donut"
+    },
+    legend: {
+      show: false
+    },
+    tooltip: {
+      show: false
+    },
+    donut: {
+      title: "",
+      label: {
+        show: false,
+        ratio: 1.5
+      },
+      width: 3
+    },
+    legend: {
+      show: false
+    },
+    bindto: "#donut05"
+  });
+
+  var bar01 = bb.generate({
+    data: {
+      x: "x",
+      columns: [
+        ["x", "12:00", "16:00", "20:00", "0:00", "4:00", "8:00"],
+        ["시스템가입자", 30, 20, 50, 40, 60, 50],
+        ["신규가입자", 100, 130, 90, 140, 130, 120]
+      ],
+      colors: {
+        시스템가입자: "#46c6e2",
+        신규가입자: "#6694a3"
+      },
+      type: "bar",
+      types: {
+        시스템가입자: "spline",
+        신규가입자: "bar"
+      },
+      groups: [
+        [
+          "시스템가입자",
+          "신규가입자"
+        ]
+      ]
+    },
+    axis: {
+      x: {
+        type: "category"
+      }
+    },
+    bindto: "#bar01"
+  });
+  var bar02 = bb.generate({
+    data: {
+      x: "x",
+      columns: [
+        ["x", "12:00", "16:00", "20:00", "0:00", "4:00", "8:00"],
+        ["최근1일로그인", 30, 20, 50, 40, 60, 50],
+        ["최근일주일활동로그인", 100, 130, 90, 140, 130, 120]
+      ],
+      colors: {
+        최근1일로그인: "#89b37c",
+        최근일주일활동로그인: "#eaba68"
+      },
+      type: "bar",
+      types: {
+        최근1일로그인: "spline",
+        최근일주일활동로그인: "bar"
+      },
+      groups: [
+        [
+          "최근1일로그인",
+          "최근일주일활동로그인"
+        ]
+      ]
+    },
+    axis: {
+      x: {
+        type: "category"
+      }
+    },
+    bindto: "#bar02"
+  });
+  var pie01 = bb.generate({
+    data: {
+      columns: [
+        ["완료", 30],
+        ["진행중", 45],
+        ["협의중", 25],
+        ["미완료", 25],
+        ["종료", 25]
+      ],
+      colors: {
+        완료: "#945aa1",
+        진행중: "#4d9dba",
+        협의중: "#328ed1",
+        미완료: "#a9ac67",
+        종료: "#979797"
+      },
+      type: "donut"
+    },
+    legend: {
+      position: "right"
+    },
+    donut: {
+      title: "",
+      label: {
+        ratio: 1.2
+      },
+      width: 20
+    },
+    bindto: "#pie01"
+  });
+  var areaChart01 = bb.generate({
+    data: {
+      x: "x",
+      columns: [
+        ["x", "sun", "mon", "tue", "wed", "thu", "fri", "sat"],
+        ["Complated", 300, 350, 300, 10, 10, 30, 10],
+        ["Rejected", 130, 100, 140, 200, 150, 50, 0]
+      ],
+      types: {
+        Complated: "area",
+        Rejected: "area"
+      }
+    },
+    axis: {
+      x: {
+        type: "category"
+      }
+    },
+    bindto: "#areaChart01"
+  });
+</script>
+
 </body>
 </html>

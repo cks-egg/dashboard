@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/common.css" type="text/css"/>
+    <script type="text/javascript" src="/javascripts/ui.js"></script>
+    <script type="text/javascript" src="/javascripts/common.js"></script>
+
+</head>
+<body>
+<div class="wrapper"><!-- start : wrapper -->
+
+    <div class="header"><!-- start : header -->
+        <div class="rela">
+            <h1><a href="javascript:void(0)" class="mui-btn">KND</a></h1>
+            <div class="totalBox">
+                <ul id="gnb" class="gnb">
+                    <li><a href="javascript:void(0)">홈</a></li>
+                    <li><a href="javascript:void(0)">프로젝트현황</a></li>
+                    <li><a href="javascript:void(0)">품질분석 현황</a></li>
+                    <li><a href="javascript:void(0)" class="arr">관리자용</a>
+                        <ul class="subm">
+                            <li><a href="">사용자관리</a></li>
+                            <li><a href="">기관관리</a></li>
+                            <li><a href="">분석신청</a></li>
+                            <li><a href="">분석결과</a></li>
+                            <li><a href="">평가내역</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="sideCont">
+                <a href="javascript:void(0)" class="icoLink mui-btn">
+                    <i class="el-icon-question"></i>
+                </a>
+                <a href="javascript:void(0)" class="icoLink mui-btn">
+                    <i class="el-icon-bell"></i>
+                </a>
+                <a href="javascript:void(0)" class="icoLink mui-btn">
+                    <i class="el-icon-setting"></i>
+                </a>
+                <div class="selectLayer">
+                    <a href="javascript:void(0)" class="selectLink">
+                        <img src="/images/etc/etc_myinfo.png" />
+                    </a>
+                    <ul class="selectValueList" style="display: none;">
+                        <li><a href="javascript:void(0)">프로파일</a></li>
+                        <li><a href="javascript:void(0)">로그아웃</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0)" class="tOpen icoLink mui-btn">
+                    <i class="el-icon-s-unfold"></i>
+                    <i class="el-icon-close"></i>
+                </a>
+            </div>
+        </div>
+    </div><!-- end : header -->
+
+    <div class="container" id="contents"><!-- start : container -->
+        <div class="sonaView">
+            <div class="bar mb20">
+                <h2>프로젝트 현황판</h2>
+                <a href="javascript:void(0)" class="mui-btn">위젯 생성</a>
+            </div>
+        </div>
+        <div class="mRow">
+            <div class="item">
+                <div class="mbox">
+                    <a href="javascript:void(0)" class="btnAdd mui-btn">
+                        <i class="el-icon-plus"></i>
+                        <span>추가하기</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="mbox">
+                    <a href="javascript:void(0)" class="btnAdd mui-btn">
+                        <i class="el-icon-plus"></i>
+                        <span>추가하기</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item last">
+                <div class="mbox">
+                    <a href="javascript:void(0)" class="btnAdd mui-btn">
+                        <i class="el-icon-plus"></i>
+                        <span>추가하기</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mRow mt20">
+            <div class="item">
+                <div class="mbox">
+                    <a href="javascript:void(0)" class="btnAdd mui-btn">
+                        <i class="el-icon-plus"></i>
+                        <span>추가하기</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="mbox">
+                    <a href="javascript:void(0)" class="btnAdd mui-btn">
+                        <i class="el-icon-plus"></i>
+                        <span>추가하기</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item last">
+                <div class="mbox">
+                    <a href="javascript:void(0)" class="btnAdd mui-btn">
+                        <i class="el-icon-plus"></i>
+                        <span>추가하기</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mRow mt20">
+            <div class="item">
+                <div class="mbox">
+                    <a href="javascript:void(0)" class="btnAdd mui-btn">
+                        <i class="el-icon-plus"></i>
+                        <span>추가하기</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="mbox">
+                    <a href="javascript:void(0)" class="btnAdd mui-btn">
+                        <i class="el-icon-plus"></i>
+                        <span>추가하기</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item last">
+                <div class="mbox">
+                    <a href="javascript:void(0)" class="btnAdd mui-btn">
+                        <i class="el-icon-plus"></i>
+                        <span>추가하기</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- end : container -->
+
+
+</div><!-- end : wrapper-->
+
+<div class="dialog on" id="gadgetAdd">
+    <div class="popBox">
+        <a href="javascript:common.popClose('#gadgetAdd')" class="popClose mui-btn"><i class="el-icon-close"></i></a>
+        <h1>가젯 추가하기</h1>
+        <div class="sideBox">
+            <div class="sideSearch">
+                <input type="text" class="inp" placeholder="검색" />
+            </div>
+            <p class="tit">분류</p>
+            <ul>
+                <li>
+                    <a href="javascript:void(0)">Charts</a>
+                    <span class="cnt">5</span>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">Jira</a>
+                    <span class="cnt">5</span>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">Wallboard</a>
+                    <span class="cnt">5</span>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">전체</a>
+                    <span class="cnt">5</span>
+                </li>
+            </ul>
+        </div>
+        <div class="gadgetListBox">
+            <ul>
+                <li>
+                    <div class="pic"><img src="/images/etc/etc_gadgetList01.png" /></div>
+                    <div class="cont">
+                        <p class="tit">Aggegation gadget</p>
+                        <p class="info">작성자 ACA 내장</p>
+                        <p class="desc">Displays an aggergated value based on a filter, aggregation field
+                        and aggregation function. Displays an aggergated value based on a filter, aggregation field
+                            and aggregation function.</p>
+                    </div>
+                    <a href="javascript:void(0)" class="mui-btn">가젯 추가</a>
+                </li>
+                <li>
+                    <div class="pic"><img src="/images/etc/etc_gadgetList01.png" /></div>
+                    <div class="cont">
+                        <p class="tit">Aggegation gadget</p>
+                        <p class="info">작성자 ACA 내장</p>
+                        <p class="desc">Displays an aggergated value based on a filter, aggregation field
+                            and aggregation function. Displays an aggergated value based on a filter, aggregation field
+                            and aggregation function.</p>
+                    </div>
+                    <a href="javascript:void(0)" class="mui-btn">가젯 추가</a>
+                </li>
+                <li>
+                    <div class="pic"><img src="/images/etc/etc_gadgetList01.png" /></div>
+                    <div class="cont">
+                        <p class="tit">Aggegation gadget</p>
+                        <p class="info">작성자 ACA 내장</p>
+                        <p class="desc">Displays an aggergated value based on a filter, aggregation field
+                            and aggregation function. Displays an aggergated value based on a filter, aggregation field
+                            and aggregation function.</p>
+                    </div>
+                    <a href="javascript:void(0)" class="mui-btn">가젯 추가</a>
+                </li>
+                <li>
+                    <div class="pic"><img src="/images/etc/etc_gadgetList01.png" /></div>
+                    <div class="cont">
+                        <p class="tit">Aggegation gadget</p>
+                        <p class="info">작성자 ACA 내장</p>
+                        <p class="desc">Displays an aggergated value based on a filter, aggregation field
+                            and aggregation function. Displays an aggergated value based on a filter, aggregation field
+                            and aggregation function.</p>
+                    </div>
+                    <a href="javascript:void(0)" class="mui-btn">가젯 추가</a>
+                </li>
+                <li>
+                    <div class="pic"><img src="/images/etc/etc_gadgetList01.png" /></div>
+                    <div class="cont">
+                        <p class="tit">Aggegation gadget</p>
+                        <p class="info">작성자 ACA 내장</p>
+                        <p class="desc">Displays an aggergated value based on a filter, aggregation field
+                            and aggregation function. Displays an aggergated value based on a filter, aggregation field
+                            and aggregation function.</p>
+                    </div>
+                    <a href="javascript:void(0)" class="mui-btn">가젯 추가</a>
+                </li>
+                <li>
+                    <div class="pic"><img src="/images/etc/etc_gadgetList01.png" /></div>
+                    <div class="cont">
+                        <p class="tit">Aggegation gadget</p>
+                        <p class="info">작성자 ACA 내장</p>
+                        <p class="desc">Displays an aggergated value based on a filter, aggregation field
+                            and aggregation function. Displays an aggergated value based on a filter, aggregation field
+                            and aggregation function.</p>
+                    </div>
+                    <a href="javascript:void(0)" class="mui-btn">가젯 추가</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+
+    });
+</script>
+
+</body>
+</html>
